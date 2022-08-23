@@ -1,0 +1,91 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    padding:5px;
+    font-style: normal;
+    font-size: medium;
+}
+.education{
+    background-color:lightblue;
+    padding-left:10px;
+    padding-right:10px;
+}
+section{
+    display:flex;
+    justify-content:center;
+}
+#phone::after{
+    content:"\a";
+    white-space: pre;
+}
+.personal{
+    width:210px;
+    line-height: 25px;
+    padding-left:5px;
+    padding-top:10px ;
+    padding-bottom:10px ;
+}
+.technical{
+    background-color:plum;
+    padding-left:10px;
+    padding-right:10px;
+    overflow:auto;
+}
+h2{
+    color:cornflowerblue;
+    text-decoration: underline;
+    font-size:20px;
+}
+img{
+    width:140px;
+    height:140px;
+    border-radius:80px;
+    border:5px solid gray;
+}
+.photo{
+   text-align: center;
+   color:blueviolet;
+}
+.skills ul{
+    padding-left:5px;
+    padding-top: 10px;
+    padding-bottom:20px;
+    list-style:disc;
+}
+.strength ul{
+    padding-top: 10px;
+    padding-bottom:20px;
+    list-style:disc;
+} 
+h5{
+    font-size:15px;
+    font-style:italic;
+}
+h3{
+    font-style: normal ;
+    font-size:15px;
+    color:cadetblue;
+}
+.career{
+    padding-left:5px;
+    padding-top:5px;
+    text-align:left;
+}
+#para1{
+    text-align:left; 
+    padding-left:40px;
+    padding-bottom:20px;
+}
+ul{
+    padding-left:20px;
+    padding-top: 10px;
+    padding-bottom:20px;
+    list-style:disc ;
+} 
+.declare{
+padding-left:5px;
+padding-top:5px;
+text-align:left;
+}

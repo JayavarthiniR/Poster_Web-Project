@@ -1,0 +1,315 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+header{
+    width:100%;
+    display:flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+.linkOptions li{
+    display:inline;
+    list-style: none;
+    padding: 10px; 
+    font-weight: 600;
+   font-size: 15px;
+   line-height: 22px;   
+}
+.container{
+    padding:0 30px;
+}
+.head{
+    width:700px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+}
+.subscribe{
+    width:100%;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #d3d3d3;
+    font-family: 'Inter';
+}
+.subscribe p{
+    width:550px;
+    padding: 10px;
+    color: #585757;
+}
+.userInput input{
+    width:200px;
+    padding: 3px;
+}
+.userInput button{
+    width:70px;
+    padding:4px;
+}
+.subscribe p1,p2{
+    color:#d3d3d3;
+    font-size: 13px;
+}
+.notifications{
+    width:460px;
+    padding: 10px;
+}
+.subscribe button{
+    color: white;   
+    background-color:#24AFB5;
+    border: none;
+    border-radius: 2px;
+}
+.iPhone{
+    padding:10px;
+}
+.earth{
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    border-bottom: 1px solid #d3d3d3;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+}
+.star{
+    font-size:25px;
+    padding: 40px;
+    width:480px;
+}
+.install{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap:wrap ;
+    column-gap: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #d3d3d3;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+.computerMonitor{
+    flex-basis: 25%;
+}
+.computerMonitor h4{
+     line-height: 40px;
+}
+.computerMonitor p{
+    color: #585757;
+}
+#Learn{
+    color:#24AFB5;
+    line-height:40px;
+}
+.Achievements{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding:40px;
+    gap: 20px;
+    border-bottom: 1px solid #d3d3d3;
+    font-family: 'Inter';
+    font-style: normal;
+}
+.Achieve{
+ flex-basis:25%;
+ font-weight: 400;
+}
+.Achieve h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.enormity{
+    padding:1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #d3d3d3;
+    font-style: normal;
+}
+.shortHeading{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 10px;
+}
+.enormityOfUniverse{
+    padding: 4px;
+    color:#585757;
+}
+.installMounts{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:1.5rem 4rem;
+}
+.stableAndSecure p{
+ text-align: center;
+ color:#585757; 
+ font-weight: 400;
+}
+.stableAndSecurearrow{
+ margin-bottom: 5rem;
+}
+#steps{
+    padding:10px;
+    color: black;
+    font-weight: 600;
+}
+.beautyOfAstronomy{
+    display:flex;
+    padding: 3.8rem;
+}
+.astronomy{
+    align-items: left;
+    justify-content:flex-start;
+    padding: 3rem;
+    width:600px;
+    border-bottom: 1px solid #d3d3d3;
+    font-weight: 400;
+}
+.astronomy img{
+    padding:20px 0;
+}
+.astronomy h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.astronomy p{
+    padding:20px 0;
+    color: #585757;
+}
+.astronomy p1{
+    color:#24AFB5; ;
+}
+.aspires{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom:1px solid #d3d3d3 ;
+}
+.telescope{
+    flex-basis:22%;
+}
+.telescope h3{
+    font-weight: 600;
+    line-height: 32px;
+    font-size: 24px;
+}
+.telescope p1{
+    color: #585757;
+    font-size:18px;
+}
+#date{
+    color: #d3d3d3;
+    padding: 10px;
+    font-size: 13px;
+}
+.views{
+    display: flex;
+    column-gap: 10px;
+    padding:1rem 0;
+}
+.productCategory{
+    align-items: center;
+    border-bottom: 1px solid #d3d3d3;
+    padding:30px 80px;
+}
+.enormityOftheProduct{
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom:1px solid #d3d3d3;
+}
+.enormityOftheProduct p{
+    width:700px;
+    padding: 10px;
+    color: #585757;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+.longHeader{
+    width:700px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+}
+.userInput input{
+    width:200px;
+    padding: 3px;
+}
+.userInput button{
+    width:70px;
+    padding:4px;
+}
+.enormityOftheProduct p1,p2{
+    color:#d3d3d3;
+    font-size: 13px;
+}
+.notifications{
+    width:460px;
+    padding: 10px;
+}
+.sectionlogo{
+    padding:10px 0;
+}
+.enormityOftheProduct button{
+    color: white;   
+    background-color:#24AFB5;
+    border: none;
+    border-radius: 2px;
+}
+.linkCategory{
+    display:flex;
+    column-gap: 3rem;
+    justify-content:space-between;
+}
+.linkCategory ul{
+    list-style: none;
+}
+.linkCategory li{
+    padding:3px 0;
+    color:#585757;
+}
+.linkCategory li b{
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+    line-height:22px;
+}
+.leftcategory{
+    display:flex;
+    justify-content: space-between;
+}
+.category{
+    width:230px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#d3d3d3;
+    padding:20px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+footer li{
+    display: inline;
+    list-style: none;
+    padding: 10px;
+}
+
