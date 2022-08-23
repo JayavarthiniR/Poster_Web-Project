@@ -312,4 +312,7 @@ footer li{
     list-style: none;
     padding: 10px;
 }
+@media screen and(max-width:480px){
+    
+}
 
