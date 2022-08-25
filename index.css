@@ -5,10 +5,14 @@
     font-family: 'Inter';
 }
 header{
-    width:100%;
     display:flex; 
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    left: 10px;
+}
+.hamburger{
+    display:none;
 }
 .linkOptions li{
     display:inline;
@@ -18,17 +22,24 @@ header{
    font-size: 15px;
    line-height: 22px;   
 }
+nav a{
+        text-decoration: none;
+        color: black;
+}
 .container{
     padding:0 30px;
 }
 .head{
-    width:700px;
+    width:70%;
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
 }
+.mobileHeader{
+    display:none;
+}
 .subscribe{
-    width:100%;
+    padding-top: 7%;
     text-align: center;
     display: flex;
     flex-direction:column;
@@ -38,13 +49,16 @@ header{
     font-family: 'Inter';
 }
 .subscribe p{
-    width:550px;
-    padding: 10px;
+    width:50%;
+    padding: 15px 0;
     color: #585757;
+}
+.userInput{
+   display: flex;
 }
 .userInput input{
     width:200px;
-    padding: 3px;
+    padding: 5px;
 }
 .userInput button{
     width:70px;
@@ -53,6 +67,9 @@ header{
 .subscribe p1,p2{
     color:#d3d3d3;
     font-size: 13px;
+}
+.subscribe img{
+    padding-top:3%;
 }
 .notifications{
     width:460px;
@@ -64,10 +81,8 @@ header{
     border: none;
     border-radius: 2px;
 }
-.iPhone{
-    padding:10px;
-}
 .earth{
+    padding: 1rem 0;
     display: flex;
     text-align:center;
     justify-content: center;
@@ -88,12 +103,13 @@ header{
     align-content: center;
     justify-content: center;
     flex-wrap:wrap ;
-    column-gap: 20px;
-    padding: 20px;
+    column-gap: 3%;
+    padding: 6% 0;
     border-bottom: 1px solid #d3d3d3;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
+
 }
 .computerMonitor{
     flex-basis: 25%;
@@ -104,16 +120,17 @@ header{
 .computerMonitor p{
     color: #585757;
 }
-#Learn{
+#Learn a{
     color:#24AFB5;
     line-height:40px;
+    text-decoration: none;
 }
 .Achievements{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding:40px;
+    padding:4rem 0;
     gap: 20px;
     border-bottom: 1px solid #d3d3d3;
     font-family: 'Inter';
@@ -124,11 +141,12 @@ header{
  font-weight: 400;
 }
 .Achieve h2{
-    font-size: 30px;
     font-weight: 700;
+    font-size: 54px;
+   line-height: 78px;
 }
 .enormity{
-    padding:1.5rem;
+    padding:6% 0;
     text-align: center;
     display: flex;
     flex-direction:column;
@@ -138,9 +156,9 @@ header{
     font-style: normal;
 }
 .shortHeading{
+    padding:10px 0;
     font-size: 30px;
     font-weight: 700;
-    padding: 10px;
 }
 .enormityOfUniverse{
     padding: 4px;
@@ -151,6 +169,9 @@ header{
     justify-content: center;
     align-items: center;
     padding:1.5rem 4rem;
+}
+.downarrow{
+    display:none;
 }
 .stableAndSecure p{
  text-align: center;
@@ -167,18 +188,18 @@ header{
 }
 .beautyOfAstronomy{
     display:flex;
-    padding: 3.8rem;
+    padding: 4%;
+    column-gap: 2%;
+
 }
 .astronomy{
     align-items: left;
-    justify-content:flex-start;
-    padding: 3rem;
-    width:600px;
+    width:100%;
     border-bottom: 1px solid #d3d3d3;
     font-weight: 400;
 }
-.astronomy img{
-    padding:20px 0;
+.iPhoneImage{
+    padding-top: 4%;
 }
 .astronomy h2{
     font-size: 30px;
@@ -188,22 +209,28 @@ header{
     padding:20px 0;
     color: #585757;
 }
-.astronomy p1{
-    color:#24AFB5; ;
+#learnmore a{
+    color:#24AFB5; 
+    text-decoration: none;
 }
 .aspires{
     display:flex;
     justify-content: center;
     align-items: center;
+    padding:4% 0 ;
+    column-gap: 10px;
     border-bottom:1px solid #d3d3d3 ;
 }
 .telescope{
     flex-basis:22%;
+    display:flex;
+    flex-direction: column;
 }
 .telescope h3{
     font-weight: 600;
     line-height: 32px;
-    font-size: 24px;
+    font-size: 25px;
+    padding: 10px 0;
 }
 .telescope p1{
     color: #585757;
@@ -214,10 +241,21 @@ header{
     padding: 10px;
     font-size: 13px;
 }
+.viewsmessages{
+    display:flex;
+    align-items: center;
+    column-gap: 30px;
+    padding: 10px 0;
+}
 .views{
-    display: flex;
+    display:flex;
+    align-items: center;
     column-gap: 10px;
-    padding:1rem 0;
+}
+.messages{
+    display:flex;
+    align-items: center;
+    column-gap: 10px;
 }
 .productCategory{
     align-items: center;
@@ -230,19 +268,19 @@ header{
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    padding: 30px 0;
+    padding: 4% 0;
     border-bottom:1px solid #d3d3d3;
 }
 .enormityOftheProduct p{
-    width:700px;
-    padding: 10px;
+    width:70%;
+    padding:10px;
     color: #585757;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
 }
 .longHeader{
-    width:700px;
+    width:70%;
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
@@ -264,7 +302,7 @@ header{
     padding: 10px;
 }
 .sectionlogo{
-    padding:10px 0;
+    padding:10px;
 }
 .enormityOftheProduct button{
     color: white;   
@@ -312,7 +350,82 @@ footer li{
     list-style: none;
     padding: 10px;
 }
-@media screen and(max-width:480px){
-    
+footer a{
+    text-decoration: none;
+    color:#d3d3d3;
 }
+@media screen and (max-width:480px){
+    header nav{
+        display: none;
+    }
+    .hamburger{
+        display:block ;
+        padding-right: 2%;
+    }
+    .userInput{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        padding-top: 30px;
+     }
+     button{
+        margin-top: 10px;
+     }
+     .head{
+        display:none;
+     }
+     .mobileHeader{
+        display: block;
+        width:70%;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+    }
+     .install{
+        flex-direction: column;
+     }
+     .Achievements{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+     }
+     .installMounts{
+        flex-direction:column;
+     }
+     .stableAndSecurearrow{
+        display:none;
+     }
+     .downarrow{
+        display:block;
+     }
+     .astronomy{
+        border-bottom: none;
+     }
+     .beautyOfAstronomy{
+        justify-content: flex-start;
+        flex-direction: column;
+        border-bottom: 1px solid #d3d3d3;
+        align-items: start;
+     }
+     .aspires{
+        flex-direction: column;
+     }
+     .linkCategory{
+        flex-direction: column;
+        row-gap: 10px;
+     }
+     .leftcategory{
+        flex-direction: column;
+        row-gap: 10px;
+     }
+     footer{
+        flex-direction: column-reverse;
+        row-gap:10px;
+     }
+    }
+
+
+
+
+
 
