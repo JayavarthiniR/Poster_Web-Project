@@ -8,16 +8,18 @@ header{
     display:flex; 
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    left: 10px;
-}
+} 
+body{
+   max-width:1400px;
+   margin:auto;
+} 
 .hamburger{
     display:none;
 }
 .linkOptions li{
     display:inline;
     list-style: none;
-    padding: 10px; 
+    padding: 8px; 
     font-weight: 600;
    font-size: 15px;
    line-height: 22px;   
@@ -39,7 +41,7 @@ nav a{
     display:none;
 }
 .subscribe{
-    padding-top: 7%;
+    padding-top: 60px;
     text-align: center;
     display: flex;
     flex-direction:column;
@@ -48,32 +50,32 @@ nav a{
     border-bottom: 1px solid #d3d3d3;
     font-family: 'Inter';
 }
-.subscribe p{
+#marketing{
     width:50%;
     padding: 15px 0;
     color: #585757;
 }
 .userInput{
    display: flex;
+   column-gap: 10px;
 }
 .userInput input{
-    width:200px;
+    width:180px;
     padding: 5px;
+    border-radius: 2px gray;
 }
 .userInput button{
     width:70px;
     padding:4px;
 }
-.subscribe p1,p2{
-    color:#d3d3d3;
-    font-size: 13px;
-}
 .subscribe img{
-    padding-top:3%;
+    padding-top:30px;
 }
 .notifications{
-    width:460px;
+    width:40%;
     padding: 10px;
+    color:#d3d3d3;
+    font-size: 13px;
 }
 .subscribe button{
     color: white;   
@@ -146,7 +148,7 @@ nav a{
    line-height: 78px;
 }
 .enormity{
-    padding:6% 0;
+    padding:50px 0;
     text-align: center;
     display: flex;
     flex-direction:column;
@@ -168,7 +170,7 @@ nav a{
     display:flex;
     justify-content: center;
     align-items: center;
-    padding:1.5rem 4rem;
+    padding:30px 50px; 
 }
 .downarrow{
     display:none;
@@ -188,9 +190,8 @@ nav a{
 }
 .beautyOfAstronomy{
     display:flex;
-    padding: 4%;
-    column-gap: 2%;
-
+    padding: 0 40px;
+    column-gap: 15px;
 }
 .astronomy{
     align-items: left;
@@ -198,8 +199,11 @@ nav a{
     border-bottom: 1px solid #d3d3d3;
     font-weight: 400;
 }
+.astronomy img{
+    padding-top: 30px;
+}
 .iPhoneImage{
-    padding-top: 4%;
+    padding-top: 40px;
 }
 .astronomy h2{
     font-size: 30px;
@@ -216,23 +220,24 @@ nav a{
 .aspires{
     display:flex;
     justify-content: center;
-    align-items: center;
-    padding:4% 0 ;
-    column-gap: 10px;
+    flex-wrap: wrap;
+    padding:40px 0 ;
+    column-gap: 20px;
     border-bottom:1px solid #d3d3d3 ;
 }
 .telescope{
-    flex-basis:22%;
     display:flex;
+    width:255px;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 .telescope h3{
     font-weight: 600;
     line-height: 32px;
-    font-size: 25px;
+    font-size: 27px;
     padding: 10px 0;
 }
-.telescope p1{
+#firstTelescope{
     color: #585757;
     font-size:18px;
 }
@@ -260,7 +265,7 @@ nav a{
 .productCategory{
     align-items: center;
     border-bottom: 1px solid #d3d3d3;
-    padding:30px 80px;
+    padding:3%;
 }
 .enormityOftheProduct{
     text-align: center;
@@ -268,10 +273,10 @@ nav a{
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    padding: 4% 0;
+    padding: 40px 0;
     border-bottom:1px solid #d3d3d3;
 }
-.enormityOftheProduct p{
+#stunnedUniverse{
     width:70%;
     padding:10px;
     color: #585757;
@@ -293,7 +298,7 @@ nav a{
     width:70px;
     padding:4px;
 }
-.enormityOftheProduct p1,p2{
+.enormityOftheProduct p{
     color:#d3d3d3;
     font-size: 13px;
 }
@@ -340,10 +345,13 @@ footer{
     justify-content: space-between;
     align-items: center;
     color:#d3d3d3;
-    padding:20px;
+    padding:30px;
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
+}
+.sectionlogoimage{
+    padding:20px 0px;
 }
 footer li{
     display: inline;
@@ -354,13 +362,13 @@ footer a{
     text-decoration: none;
     color:#d3d3d3;
 }
-@media screen and (max-width:480px){
+    @media (min-width: 400px) and (max-width: 550px){
     header nav{
         display: none;
     }
     .hamburger{
         display:block ;
-        padding-right: 2%;
+        padding-right:10px;
     }
     .userInput{
         display: flex;
@@ -376,7 +384,7 @@ footer a{
      }
      .mobileHeader{
         display: block;
-        width:70%;
+        width:90%;
         font-weight: 700;
         font-size: 40px;
         line-height: 40px;
@@ -397,6 +405,7 @@ footer a{
      }
      .downarrow{
         display:block;
+        padding: 25px 0px;
      }
      .astronomy{
         border-bottom: none;
@@ -422,6 +431,21 @@ footer a{
         flex-direction: column-reverse;
         row-gap:10px;
      }
+    }
+    @media (min-width: 700px) and (max-width: 900px){
+       .hamburger{
+        display:none;
+       }
+       .linkCategory{
+        display:flex;
+        column-gap:10px;
+    }  
+    .category{
+        width:30%;
+    }
+    .linkCategory li{
+         padding:3px;
+    }
     }
 
 
