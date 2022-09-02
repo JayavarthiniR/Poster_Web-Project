@@ -15,9 +15,19 @@ body{
 } 
 .hamburger{
     display:none;
+    cursor: pointer;
+}
+.ham{
+    display:block;
+    width:25px;
+    height:3px;
+    margin:5px auto;
+    background-color: grey;
+}
+.linkOptions ul{
+    display: flex;
 }
 .linkOptions li{
-    display:inline;
     list-style: none;
     padding: 8px; 
     font-weight: 600;
@@ -72,7 +82,8 @@ nav a{
     padding:10px 15px;
     border: 1px solid #DBDBDB;
     border-radius: 6px;
-    color: white;   
+    color: white; 
+    cursor:pointer;  
     background-color:#24AFB5;
     border: none;
 }
@@ -347,12 +358,6 @@ nav a{
 .sectionlogo{
     padding:10px;
 }
-.enormityOftheProduct button{
-    color: white;   
-    background-color:#24AFB5;
-    border: none;
-    border-radius: 2px;
-}
 .linkCategory{
     display:flex;
     column-gap: 2.5rem;
@@ -414,13 +419,52 @@ footer a{
     text-decoration: none;
     color:#d3d3d3;
 }
+#subscribeit{
+    color:red;
+}
+#verifySubscribe{
+    color:red;
+}
     @media (min-width: 270px) and (max-width: 680px){
-    header nav{
-        display: none;
-    }
     .hamburger{
-        display:block ;
-        padding-right:10px;
+        display:block;
+        padding-right: 10px;
+    }
+    .hamburger.active .ham:nth-child(2){
+        opacity:0;
+    }
+    .hamburger.active .ham:nth-child(1){
+        transform:translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .ham:nth-child(3){
+        transform:translateY(-8px) rotate(-45deg);
+    }
+    .linkOptions ul{
+        display:flex;
+        flex-direction: column;
+    }
+    .linkOptions{
+       position:fixed;
+       right:-100%;
+       top:70px;
+       gap:0;
+       background-color:whitesmoke;
+       width:50%;
+       height:200px;
+       text-align:center;
+       transition:0.3s;
+    }
+    .links{
+        margin: 0;
+    }
+    .linkOptions.active{
+        right:0;
+    }
+    .linknumber{
+        transition:0.7s ease;
+    }
+    .linknumber:hover{
+        color: aqua;
     }
     .subscribe img{
         width:100%;

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <script defer src="index.js"></script>
 </head>
 <body>
     <header>
@@ -17,15 +18,17 @@
         </div>
         <nav class="linkOptions">
             <ul>
-                <li><a href="#">First Link</a></li>
-                <li><a href="#">Second Link</a></li>
-                <li><a href="#">Third Link</a></li>
-                <li><a href="#">Fourth Link</a></li>
-                <li><a href="#">Fifth Link</a></li>
+                <li class="links"><a href="#" class="linknumber">First Link</a></li>
+                <li class="links"><a href="#" class="linknumber">Second Link</a></li>
+                <li class="links"><a href="#" class="linknumber">Third Link</a></li>
+                <li class="links"><a href="#" class="linknumber">Fourth Link</a></li>
+                <li class="links"><a href="#" class="linknumber">Fifth Link</a></li>
             </ul>
         </nav>
         <div class="hamburger">
-            <img src="Pictures/hamburger.svg" alt="hamburger">
+            <span class="ham"></span>
+            <span class="ham"></span>
+            <span class="ham"></span>
         </div>
     </header>
     <section class="container">
@@ -36,10 +39,10 @@
                 to use when you want to present your.</p>
             <div class="userInput">
                 <div>
-                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Email" id="email" />
                 </div>
                 <div>
-                <button aria-label="Subscribe it">Subscribe</button>
+                <button id="submitit" onClick="submitit()">Subscribe</button><span id="subscribeit"></span>
                 </div>
             </div>
             <div class="notifications">
@@ -233,14 +236,14 @@
             <div class="longHeader">Two line long header example with text for your another</div>
             <p id="stunnedUniverse">Each and every one of us has that moment when we are suddenly stunned
                 when we come face to face with the enormity of the universe.</p>
-            <div class="userInput">
-                <div>
-                <input type="text" placeholder="Email">
-                </div>
-                <div>
-                <button aria-label="Subscribe it">Subscribe</button>
-                </div>
-            </div>
+               <div class="userInput">
+                    <div>
+                    <input type="text" placeholder="Email" id="email1" />
+                    </div>
+                    <div>
+                    <button id="verifySubmit" onClick="verifySubmit()">Subscribe</button><span id="verifySubscribe"></span>
+                    </div>
+               </div>
             <div class="notifications">
                 <p>No spam,notifications only about new products, updates and freebees.</p>
                 <p>You can always unsubscribe.</p>
