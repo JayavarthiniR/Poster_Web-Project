@@ -13,7 +13,7 @@ function submitit(){
      var validemail = /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/;
     if(email.match(validemail))
     {
-        document.getElementById("subscribeit").innerHTML = " Valid E-mailId!";
+        alert(email);
     }
     else
     {
@@ -25,7 +25,7 @@ function verifySubmit(){
     var validemail1 = /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/;
    if(email1.match(validemail1))
    {
-       document.getElementById("verifySubscribe").innerHTML = " Valid E-mailId!";
+    alert(email1);
    }
    else
    {
